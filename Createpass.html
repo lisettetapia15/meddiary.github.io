@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+
+<title> Welcome to your MediCalendar </title> 
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+    font-family: Monaco;
+    text-align:center;
+    color: #99d6ff;
+  } 
+  #firstPage {
+     
+      font-family: Monaco;
+      text-align: center;
+      background-color:#99d6ff;
+    
+    textarea {
+      font-size: 16px;
+      padding: 10px;
+    }
+    p {
+      color: black;
+    }
+  }
+  div.home {
+    height:100px; 
+  }
+  </style>  
+
+</head> 
+
+<body>
+  <div data-role="page" id="firstPage" > 
+   <div >
+   <h1 style= "text-align: center;
+      font-size: 60px; font-family: Digital Kauno; margin:0; padding-top:5px;" > Change Password </h1>
+   </div>
+   
+
+   <center><div class="login" style= "width:500px; height:500px;">
+      <label for="textinput-2"></label>
+      <input type="text" name="textinput-1" id="newPassword" placeholder="New Password"  style="text-align: center; value="">
+      <label for="textinput-2"></label>
+      <input type="text" name="textinput-1" id="confirmPassword" placeholder="Confirm Password"  style="text-align: center; value="">
+      <label for="textinput-2"></label>
+      
+      <div style="border:none; background:#99d6ff; text-align; right ;" class="home" data-role="header">
+      <a href="index.html" date-role="button" data-icon= "home"  style="color:#99d6ff; left: auto; right: 0; " onclick= "window.location= 'Home.html' ;"  >Home</a>
+    </div>
+ 
+</div>
+   
+
+</body>
+</html>
