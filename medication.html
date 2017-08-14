@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medication</title>
+  
+
+  <title>JQuery Tutorial</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+   <script type="text/javascript" >
+   $(document).ready(function () {
+    $('button').click(function () {
+        $('#todo').append("<ul>" + $("input[name=task]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
+        $("input[name=task]").val('');
+    });
+    $("body").on('click', '#todo a', function () {
+        $(this).closest("ul").remove();
+    });
+});
+   </script> 
+
+ <style>
+ #MedicationPage  {
+    background-color:#99d6ff;
+            
+      form {
+          display: inline-block;
+      }
+      .form-group {
+          text-align: center;
+          padding-bottom: 25px;
+      }
+      #todo {
+          margin: 0 auto;
+          width: 500px;
+      }
+      a.close {
+        float: right;
+      }
+          
+          textarea {
+            font-size: 16px;
+            padding: 10px;
+          }
+          p {
+            color: black;
+          }
+        }
+        
+        []
+        </style>
+</head>
+<body>
+  <!-- Symptoms Page -->
+    
+    <div data-role="page" id= "MedicationPage" > 
+          <a href="#" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-arrow-l" style="color:#99d6ff; width:50px;height:20px;" onclick="window.location='homepage.html'">Back</a>
+          <h1 style="text-align: center;
+      font-size: 60px; font-family: Digital Kauno; margin:0; padding-top:0px; "> Medication </h1>
+         
+        
+       
+        <!-- ALL THE MEAT -->
+        <div data-role="main" class="ui-content">
+          
+                   <p style="font-size:25px;"> Here you should list the medication you take and the corresponding time and days you take the medication. This will allow you to keep track of what days a week you need to take each medicine. </p>
+   
+  <div class="form-group">
+        
+      <form role="form">
+          <input type="text" class="form-control" placeholder="Your Medication" name="task" style="text-align: center;">
+      </form>
+      <center><div class="login" style= "width:100px; height:100px;">
+      <button type="button" class="ui-btn ui-mini">Add</button>
+          </div>
+          <div></div>
+      <ul class="list-unstyled" id="todo"></ul>
+          </div>
+         
+         
+    </div>  
+  
+</body>
+</html>
